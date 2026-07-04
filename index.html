@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Quer uma lista de afazeres facil e praticá? Aqui está!">
+    <title>To Do List</title>
+</head>
+<body>
+    <main>
+        <header class="global-header">
+            <h1 class="text_global_style">Coloque suas tarefas em listas simples e diretas!</h1>
+        </header>
+        <section class="main-container-section">
+            <div class="content-item-tasks">
+                <form action="">
+                    <h2 class="text_global_style">Vamos lá?!</h2>
+                    <label for="textarea_form">Coloque seus afazeres aqui</label>
+                    <input 
+                    name="textarea_form"
+                     id="textarea_form"
+                      placeholder="No que está pensando?"  
+                      required
+                    >
+                    <input type="submit" value="Salvar">
+                </form>
+            </div>
+        </section>
+
+        <section class="receive-cotainer_section">
+            <div class="receive-content">
+                <h3 clas="text_global_style">Sua lista de tarefas</h3>
+                <fieldset class="receive_user_task">
+                    <button id="btn_clear">Deletar</button>
+                    <button id=" btn_edit">Editar</button>
+                    <button id="btn_filter">Filtrar</button>
+                    <legend class="text_global_style user_task user_task-legend">Em andamento!</legend>
+                    <ul id="receive_user_task-item"></ul>
+                </fieldset>    
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
