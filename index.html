@@ -1,46 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Quer uma lista de afazeres facil e praticá? Aqui está!">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+     <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Quer uma lista de afazeres facil e praticá? Aqui está!"
+    />
+    <script src="index.js" defer ></script>
     <title>To Do List</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header class="global-header">
-            <h1 class="text_global_style">Coloque suas tarefas em listas simples e diretas!</h1>
-        </header>
-        <section class="main-container-section">
-            <div class="content-item-tasks">
-                <form action="">
-                    <h2 class="text_global_style">Vamos lá?!</h2>
-                    <label for="textarea_form">Coloque seus afazeres aqui</label>
-                    <input 
-                    name="textarea_form"
-                     id="textarea_form"
-                      placeholder="No que está pensando?"  
-                      required
-                    >
-                    <input type="submit" value="Salvar">
-                </form>
-            </div>
-        </section>
+      <header class="global-header">
+        <h1 class="text_global_style">
+          Coloque suas tarefas em listas simples e diretas!
+        </h1>
+      </header>
+      <section class="main-container-section">
+        <div class="content-item-tasks">
+          <form>
+            <h2 class="text_global_style">Vamos lá?!</h2>
+            <label for="textarea_form">Coloque seus afazeres aqui</label>
+            <textarea name="textarea_form"
+            rows="3"
+              id="textarea_form"
+              placeholder=" No que está pensando?"
+              required>
+            </textarea>
+            <button class="btn-style" type="submit" value="Salvar">Salvar</button>
+          </form>
+        </div>
+      </section>
 
-        <section class="receive-cotainer_section">
-            <div class="receive-content">
-                <h3 clas="text_global_style">Sua lista de tarefas</h3>
-                <fieldset class="receive_user_task">
-                    <button id="btn_clear">Deletar</button>
-                    <button id=" btn_edit">Editar</button>
-                    <button id="btn_filter">Filtrar</button>
-                    <legend class="text_global_style user_task user_task-legend">Em andamento!</legend>
-                    <ul id="receive_user_task-item"></ul>
-                </fieldset>    
-            </div>
-        </section>
+      <section class="receive-cotainer_section">
+        <div class="receive-content">
+           <header class="receive_task_content-header">
+              <h3 clas="text_global_style">Sua lista de tarefas</h3>
+                <button class="toggle-switch" type="button">
+                  &#9776
+                </button>
+                <div class="hidden-menu">
+                  <button type="button" class="btn-style" id="btn_clear" title="Deletar">
+                    &#128465
+                  </button>
+                  <button type="button" class="btn-style" id="btn_edit" title="Editar">
+                    &#9998
+                  </button>
+                  <button type="button" class="btn-style" id="btn_filter" title="Filtrar">
+                    &#9866
+                  </button>
+                </div>
+            </header>    
+        
+          <fieldset class="receive_user_task-fieldset">
+             <legend class="user_task user_task-legend">
+              #Em andamento!
+            </legend>
+            <ul id="receive_user_task-item"></ul>
+          </fieldset>
+        </div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
