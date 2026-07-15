@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px){
+    body{
+        font-size: 22px;
+    }
+    
+    .main-container-section, .receive-container_section{
+    width: 30rem;
+    height: 17rem;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    .content-create-tasks{
+        padding: 0;
+    }
+
+    form{
+        text-align: center;
+    }
+
+    form h2{
+        text-align: left;
+        font-size: 28px;  
+        margin-left: 15px;
+    }
+
+    form .btn-style {
+        margin-left: 28rem;
+}
+
+    #textarea_form{
+        align-self: center;
+        width: 15rem;
+        font-size: 20px;
+        border: 2px solid;
+        height: 5rem;
+    }
+
+    ::placeholder{
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .receive_task_header #btn_filter{
+        margin-left: 13rem;
+        padding-right: 20px;
+    }
+
+    .receive_task_header h2{
+        width: 100%;
+    }
+
+    .list_user_task_items,
+    .list_user_task_items-active,
+    .list_user_task_items-complete{
+        width: 20rem;
+        display: grid;
+        grid-template-columns: 2fr 0.5fr 0.5fr;
+        align-items: center;
+    } 
+    
+}

@@ -8,7 +8,8 @@ const btnHidden = document.querySelector("#hidden-btn");
 
 const textarea = document.querySelector("#textarea_form");
 const divHiddenMenu = document.querySelector(".hidden-menu");
-const ul = document.querySelector("#receive_user_task-item");
+const ul = document.querySelector("#receive_user_task-create");
+const menuHidden = document.querySelector('.hidden-menu')
 
 const tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
 
@@ -58,5 +59,11 @@ btnSalvarForm.addEventListener("click", (evento) => {
    renderizaTarefa()
   salvaDados(tarefas)
 });
+
+menuHidden.addEventListener('mouseEnter', ()=>{
+  const botaoConcluidas = document.createElement('button')
+  botaoConcluidas.classList.add('btn-style')
+  const botaoEmAndamento = document.createElement('button')
+})
 
 //mudar os btn

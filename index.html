@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
      <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="responsivo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
@@ -22,20 +23,20 @@
     <main>
       <header class="global-header">
         <h1 class="text_global_style">
-          Coloque suas tarefas em listas simples e diretas!
+          Coloque suas tarefas em uma lista simples e direta!
         </h1>
       </header>
       <section class="main-container-section">
-        <div class="content-item-tasks">
-          <form>
+        <div class="content-create-tasks">
+          <form >
             <h2 class="text_global_style">Vamos lá?!</h2>
-            <label for="textarea_form">Coloque seus afazeres aqui</label>
+            <label for="textarea_form">Coloque seus afazeres aqui.</label>
             <textarea name="textarea_form"
-            rows="3"
+              rows="3"
               id="textarea_form"
               placeholder="No que está pensando?"
               required></textarea>
-            <button type=""  class="btn-style" id="btn_form" >Salvar</button>
+            <button type="button"  class="btn-style" id="btn_form" >Salvar</button>
           </form>
         </div>
       </section>
@@ -43,20 +44,19 @@
       <section class="receive-container_section">
         <div class="receive-content">
           
-           <header class="receive_task_content-header">
-              <h3 clas="text_global_style">Sua lista de tarefas</h3>
-                <div class="hidden-menu">
-                  <button type="button" class="btn-style" id="btn_filter" title="Filtrar">
+           <header class="receive_task_header">
+              <h2 clas="text_global_style">Sua lista de tarefas</h3>
+                 <button type="button" class="btn-style" id="btn_filter" title="Filtrar">
                     &#9866
                   </button>
-                </div>
+                <div class="hidden-menu"></div>
             </header>    
         
           <fieldset class="receive_user_task-fieldset">
              <legend class="user_task user_task-legend">
               #Em andamento!
             </legend>
-            <ul id="receive_user_task-item"></ul>
+            <ul id="receive_user_task-create"></ul>
           </fieldset>
         </div>
       </section>
