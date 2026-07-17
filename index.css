@@ -92,7 +92,7 @@ h2 {
 
 .btn-style {
   border-radius: 10px;
-  min-width: 7rem;
+  width: 7rem;
   max-width: 10rem;
   display: block;
   align-self: center;
@@ -138,34 +138,63 @@ h2 {
   margin-top: 0;
 }
 
-
-
 #btn_filter {
   height: 1.5rem;
-  min-width: 0.5rem;
+  width: 2.5rem;
   font-size: 22px;
   line-height: 1px;
 }
 
-#btn_edit {
+.btn_edit {
   height: 2rem;
-  min-width: 1rem;
+  width: 2.5rem;
   font-size: 22px;
   line-height: 10px;
 }
 
-#btn_clear {
+.btn_clear {
   height: 2rem;
-  min-width: 1rem;
+  width: 2.5rem;
   font-size: 26px;
+  margin-left: 0.5rem;
   font-weight: 700;
   line-height: 10px;
 }
 
-#btn_edit,
-#btn_clear {
+.btn_edit,
+.btn_clear {
   background-color: #868080a4;
   border: 0;
+}
+
+.receive_task_header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.hidden-menu{
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--border-color-secondary);
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(37, 37, 37);
+}
+
+.btn-hidden-menu{
+  width: 5rem;
+  cursor: pointer;
+  height: 3rem;
+  font-size: 16px;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.hidden-menu #btn_filter{
+  margin-left: 0;
 }
 
 .receive_user_task-fieldset {
@@ -178,9 +207,10 @@ h2 {
 .list_user_task_items-complete {
   background-color: #868080a4;
   width: 14rem;
+  display: flex;
+  justify-content: space-between;
   margin: 7px auto;
   border-radius: 15px;
-  cursor: pointer;
   padding: 3px;
   text-align: center;
   font-family: var(--secondary-text-font);
@@ -191,6 +221,24 @@ li {
   list-style: none;
 }
 
+.checkbox_style{
+  appearance: none;
+}
+
+.checkbox_style{
+  width: 15px;
+  align-self: center;
+  height: 15px;
+  border: 2px solid var(--background-therdiary-color) ;
+  border-radius: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.checkbox_style:checked{
+  background-color: var(--backgroud-complete-color);
+}
+
 .list_user_task_items-active {
   border: 2px solid #ffffff;
 }
@@ -199,3 +247,5 @@ li {
   background-color: var(--backgroud-complete-color);
   border: 2px solid #91ff02;
 }
+
+
