@@ -38,9 +38,13 @@
         height: 5rem;
     }
 
+    #textarea_form ::first-letter{
+        text-transform: uppercase;
+    }
+
     ::placeholder{
-        font-size: 22px;
-        line-height: 25px;
+        font-size: 20px;
+        line-height: 20px;
     }
 
     .receive_task_header #btn_filter{
@@ -57,7 +61,7 @@
     .list_user_task_items-complete{
         width: 20rem;
         display: grid;
-        grid-template-columns: 2fr 0.5fr 0.5fr;
+        grid-template-columns: 0.2fr 2fr 0.5fr 0.5fr;
         align-items: center;
     } 
     
